@@ -3,22 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coba Tailwind</title>
     <link href="css/style.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        ungua: '#a594f9',
+                        ungub: '#cdc1ff',
+                        unguc: '#e5d9f2',
+                        birua: '#c4d9ff',
+                        birub: '#c5baff'
+                    },
+                },
+            },
+        };
+    </script>
+    <title>Coba Tailwind</title>
+    <style type="text/tailwindcss"></style>
+
 </head>
 <body>
-    <h1 class="m-3 text-6xl text-black hover:text-sky-900 font-habanera font-medium" >Hello WPU</h1>
-    <button class="my-3 mx-3 p-3 w-40 inline-block text-white in bg-sky-500 rounded-full shadow hover:bg-sky-600 hover:text-white focus:outline-2 focus:outline-offset-2 focus:outline-sky-500 active:bg-violet-500 font-habanera font-bold">Coba Aja</button>
+    <h1 class="my-10 text-6xl text-center text-black hover:text-sky-900 font-habanera font-bold" >Mari Belajar <span class="bg-gradient-to-r from-ungub to-birua bg-clip-text text-transparent">TailwindCSS!</span></h1>
+    <button class="my-3 mx-3 p-3 w-auto min-w-40 inline-block text-white in bg-sky-500 rounded-full shadow hover:bg-sky-600 hover:text-white focus:outline-2 focus:outline-offset-2 focus:outline-sky-500 active:bg-violet-500 font-habanera font-bold">Gak Mau Ahh!</button>
+
+    <section class="mb-10 bg-gradient-to-r from-ungua to-birua">
+        <h2 class="text-3xl text-center">Spacing</h2>
+        <div class="m-20 bg-ungub">Margin</div>
+        <div class="py-8 bg-unguc">Padding</div>
+    </section>
+
+    <section class="mb-12 bg-birua">
+        <h2 class="text-3xl text-center">Sizing</h2>
+        <div class="w-32 h-32 bg-birub">Kotak 1</div>
+    </section>
     
-    <section class="mb-96 mx-3">
+    <section class="mx-3">
         <h2 class="font-habanera font-bold text-4xl mb-3">Belajar Mengenal Typography Hezki</h2>
-        <div class=" font-habanera font-light text-xs">By Yehezkiel Kristiawan, 02 Desember 2025</div>
+        <div class="mb-8 text-gray-500 font-habanera font-light text-xs">By <a href="#" class="font-bold">Yehezkiel Kristiawan</a>, 02 Desember 2025</div>
         <p class="mb-2 font-habanera font-medium">Mau cari tahu lebih bannyak mengenai hal ini?</p>
-        <p class="mb-4 font-habanera font-light text-xs">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum et placeat beatae. Non sit eius unde, officia assumenda amet cumque debitis animi fugiat. Explicabo dolore quod, molestiae dolorem eligendi dolores quo eveniet ullam odit facilis ratione dignissimos animi architecto distinctio, ipsum, itaque ipsam? Aliquam totam aliquid, animi exercitationem beatae delectus id accusantium sed, laborum nesciunt quaerat. Saepe porro non sunt alias nam quod. Quia iure dolorum obcaecati. Rem, ipsa provident?</p>
+        <p class="mb-4 font-habanera font-light text-xs">Lorem ipsum dolor sit amet, <a href="#" class="underline text-sky-600 font-medium">consectetur</a> adipisicing elit. Rerum et placeat beatae. Non sit eius unde, officia assumenda amet cumque debitis animi fugiat. Explicabo dolore quod, molestiae dolorem eligendi dolores quo eveniet ullam odit facilis ratione dignissimos animi architecto distinctio, ipsum, itaque ipsam? Aliquam totam aliquid, animi exercitationem beatae delectus id accusantium sed, laborum nesciunt quaerat. Saepe porro non sunt alias nam quod. Quia iure dolorum obcaecati. Rem, ipsa provident?</p>
         <blockquote class="mb-4 font-habanera italic text-xs">
             "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis consequuntur ut tenetur aliquid ducimus dolorum qui minima quaerat, veritatis eligendi?"
         </blockquote>
         <p class="mb-4 font-habanera font-light text-xs">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis velit aut, recusandae voluptas facilis deleniti aliquid sit minus hic modi qui labore harum culpa sint, illum nihil quia, optio nulla!</p>
     </section>
+
+    <!-- Contoh penggunaan background image dengan Tailwind CSS -->
+    <div class="mb-20 max-w-3xl h-96 bg-ungua mx-auto mt-[42px] bg-cover bg-no-repeat bg-top bg-fixed overflow-y-scroll rounded-xl border-[3px] border-birua shadow-xl shadow-slate-400" 
+    style="background-image: url('/src/assets/foto/download.jpeg');">
+    <p class="p-5 text-xl font-habanera font-medium text-black">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates sint velit id dolorum suscipit asperiores qui animi omnis eius repudiandae, tempora libero necessitatibus accusantium eaque pariatur saepe dolorem laborum odit illo cupiditate praesentium quidem voluptatibus! Neque sed reprehenderit beatae id laborum distinctio aliquid sunt, iure minima delectus commodi unde quia consectetur dolores qui asperiores quod amet doloribus aut? Sed, in iure ut quas provident architecto officiis alias tempora voluptate, voluptas non expedita quo totam dolorem deleniti aut quia? Quos porro, inventore, praesentium at earum cum deserunt eius, fugiat commodi tenetur voluptates? Qui pariatur aliquid fugiat praesentium cupiditate, nesciunt porro animi, ex laboriosam numquam ad reprehenderit at itaque consequuntur quis corrupti ab dolorem, nisi deleniti? Aspernatur porro, id a totam aliquid dicta modi veniam natus autem facilis nostrum similique possimus sunt laudantium necessitatibus amet inventore voluptas blanditiis. Accusamus asperiores architecto repellendus dolores dolorum quas omnis ab accusantium tenetur, non natus, in incidunt laborum dicta nisi corrupti libero, nihil animi quam ut fuga minima dolor alias? Similique rerum ab hic dolore quis vel sapiente minus explicabo laborum, iste debitis obcaecati atque porro ducimus assumenda laboriosam, voluptatibus corrupti, sed dignissimos ipsam libero nostrum tempore reiciendis. Ut ipsam iure eligendi animi repellendus eveniet eius?</p>
+    </div>
+
+    <!-- Contoh penggunaan background image dengan overlay blend mode -->
+    <div class="max-w-3xl h-96 mx-auto mt-[42px] bg-ungua bg-contain bg-no-repeat bg-center rounded-2xl shadow-xl shadow-indigo-500 overflow-hidden border-8 bg-blend-overlay" style="background-image: url('/src/assets/foto/berbintang.jpeg');">
+        <div class="w-full h-full bg-birua mix-blend-multiply"></div>
+    </div>
+
+    <div class="mb-96"></div>
 </body>
 </html>
